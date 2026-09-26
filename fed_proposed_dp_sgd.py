@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-fed_proposed_v3.py
-
-A safer PD-only federated learning baseline designed to:
-1) improve weak clients via transfer from stronger clients,
-2) protect strong clients from negative transfer,
-3) prevent unstable clients from contaminating others,
-4) keep per-round logs for downstream analysis.
-"""
 
 import os
 import glob
