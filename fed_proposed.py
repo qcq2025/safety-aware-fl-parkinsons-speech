@@ -1,38 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""
-fed_proposed_v3.py
-
-A safer PD-only federated learning baseline designed to:
-1) improve weak clients via transfer from stronger clients,
-2) protect strong clients from negative transfer,
-3) prevent unstable clients from contaminating others,
-4) keep per-round logs for downstream analysis.
-    
-python fed_qfedavg_pd.py \
-  --pd_clients EN ZH ES IT CZ \
-  --seed 42 \
-  --rounds 100 \
-  --q 5 \
-  --local_lr 0.01 \
-  --local_epochs 3 \
-  --outdir results/qfedavg_seed42
-  
-  
-for seed in 42 52 62
-do
-  python fed_qfedavg_pd.py \
-    --pd_clients EN ZH ES IT CZ \
-    --seed ${seed} \
-    --rounds 100 \
-    --q 5 \
-    --local_lr 0.01 \
-    --local_epochs 3 \
-    --outdir results/qfedavg_seed${seed}
-done
-"""
-
 import os
 import glob
 import json
